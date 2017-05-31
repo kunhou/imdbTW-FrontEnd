@@ -1,33 +1,39 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <el-button @click.native="startHacking">Let's do it</el-button>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-      msg: 'Use Vue 2.0 Today!'
-    }
-  },
-
-  methods: {
-    startHacking () {
-      this.$notify({
-        title: 'It Works',
-        message: 'We have laid the groundwork for you. Now it\'s your time to build something epic!',
-        duration: 6000
-      })
-    }
-  }
+  name: 'app'
 }
 </script>
 
 <style>
-body {
-  font-family: Helvetica, sans-serif;
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
+
+// Common style
+.header-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 998;
+  display: flex;
+  align-items: center;
+  height: 4.8rem;
+  padding: 0 1.8rem;
+  background: #fff;
+  border-bottom: 0.1rem solid #f3f3f3;
+}
+</style>
+
 </style>

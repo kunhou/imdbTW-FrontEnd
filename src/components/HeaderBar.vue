@@ -1,5 +1,5 @@
 <template>
-  <div id="main-nav">
+   <div class="main-nav">
     <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
         <el-menu-item index="1">首頁</el-menu-item>
             <el-submenu index="2">
@@ -12,10 +12,3 @@
     </el-menu>
   </div>
 </template>
-
-<style>
-  .el-menu{
-    width:90%;
-    margin:auto;
-  }
-</style>
