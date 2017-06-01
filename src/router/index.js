@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
 
-//載入各頁面
+//載入頁面
 import HomeView from '@/views/HomeView'
 
 Vue.use(Router)
