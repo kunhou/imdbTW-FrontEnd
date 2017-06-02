@@ -1,7 +1,5 @@
 <template>
-  <div class="home-view">
-    <HeaderBar></HeaderBar>
-  </div>
+  <HeaderBar></HeaderBar>
 </template>
 
 <script>

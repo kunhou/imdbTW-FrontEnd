@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
+    <h1>首頁</h1>
   </div>
 </template>
 
@@ -36,6 +37,4 @@ export default {
   background: #fff;
   border-bottom: 0.1rem solid #f3f3f3;
 }
-</style>
-
 </style>
