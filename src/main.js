@@ -4,6 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// 載入boostrap
+import BootstrapVue from 'bootstrap-vue';
+
+/* 註冊所有組件為全域 */
+Vue.use(BootstrapVue);
 
 new Vue({
   el: '#app',

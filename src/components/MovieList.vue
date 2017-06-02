@@ -1,31 +1,39 @@
 <template>
-  <div class="card-group">
-  <div class="card">
-    <img class="card-img-top" src="http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg" alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg" alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg" alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-</div>
+  <b-card-group
+    deck = true
+    class="movielist"
+  >
+  <!-- With image -->
+    <b-card img="https://upload.wikimedia.org/wikipedia/zh/thumb/9/99/Dangal_Poster.jpg/220px-Dangal_Poster.jpg"
+            title="我和我的冠軍女兒"
+            footer="5顆星"
+            class="mb-2"
+    >
+        This is my opinion :)
+    </b-card>
+    <b-card img="https://upload.wikimedia.org/wikipedia/zh/thumb/9/99/Dangal_Poster.jpg/220px-Dangal_Poster.jpg"
+            title="我和我的冠軍女兒2"
+            class="mb-2"
+    >
+        This is my opinion :)
+    </b-card>
+    <b-card img="https://upload.wikimedia.org/wikipedia/zh/thumb/9/99/Dangal_Poster.jpg/220px-Dangal_Poster.jpg"
+            title="我和我的冠軍女兒3"
+            class="mb-2"
+    >
+        This is my opinion :)
+    </b-card>
+    <b-card img="https://upload.wikimedia.org/wikipedia/zh/thumb/9/99/Dangal_Poster.jpg/220px-Dangal_Poster.jpg"
+            title="我和我的冠軍女兒3"
+            class="mb-2"
+    >
+        This is my opinion :)
+    </b-card>
+  </b-card-group>
 </template>
 
 <style lang="scss">
+.mb-2{
+  width:20%;
+}
 </style>
