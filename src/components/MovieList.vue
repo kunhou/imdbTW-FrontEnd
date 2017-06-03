@@ -1,39 +1,62 @@
 <template>
-  <b-card-group
-    deck = true
-    class="movielist"
-  >
-  <!-- With image -->
-    <b-card img="https://upload.wikimedia.org/wikipedia/zh/thumb/9/99/Dangal_Poster.jpg/220px-Dangal_Poster.jpg"
-            title="我和我的冠軍女兒"
-            footer="5顆星"
-            class="mb-2"
-    >
-        This is my opinion :)
-    </b-card>
-    <b-card img="https://upload.wikimedia.org/wikipedia/zh/thumb/9/99/Dangal_Poster.jpg/220px-Dangal_Poster.jpg"
-            title="我和我的冠軍女兒2"
-            class="mb-2"
-    >
-        This is my opinion :)
-    </b-card>
-    <b-card img="https://upload.wikimedia.org/wikipedia/zh/thumb/9/99/Dangal_Poster.jpg/220px-Dangal_Poster.jpg"
-            title="我和我的冠軍女兒3"
-            class="mb-2"
-    >
-        This is my opinion :)
-    </b-card>
-    <b-card img="https://upload.wikimedia.org/wikipedia/zh/thumb/9/99/Dangal_Poster.jpg/220px-Dangal_Poster.jpg"
-            title="我和我的冠軍女兒3"
-            class="mb-2"
-    >
-        This is my opinion :)
-    </b-card>
-  </b-card-group>
+<el-row>
+  <el-col :span="6" v-for="(o, index) in 6" :key="o" :offset="index > 0 ? 0 : 0">
+    <el-card :body-style="{ padding: '0px' }">
+      <img src="https://upload.wikimedia.org/wikipedia/zh/thumb/9/99/Dangal_Poster.jpg/220px-Dangal_Poster.jpg" class="image">
+      <div style="padding: 14px;">
+        <span> {{movieTitle}} </span>
+        <div class="bottom clearfix">
+          <el-rate
+            v-model="value"
+            disabled
+            show-text
+            text-color="#ff9900"
+            text-template="{value}">
+          </el-rate>
+        </div>
+      </div>
+    </el-card>
+  </el-col>
+</el-row>
 </template>
 
-<style lang="scss">
-.mb-2{
-  width:20%;
-}
+<style>
+  .time {
+    font-size: 13px;
+    color: #999;
+  }
+  
+  .bottom {
+    margin-top: 13px;
+    line-height: 12px;
+  }
+
+  .button {
+    padding: 0;
+    float: right;
+  }
+
+  .image {
+    width: 100%;
+    display: block;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+      display: table;
+      content: "";
+  }
+
 </style>
+
+<script>
+  export default {
+    data() {
+      return {
+        value: 3.2,
+        currentDate: new Date(),
+        movieTitle: "我和我的冠軍女兒"
+      }
+    }
+  }
+</script>

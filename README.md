@@ -2,6 +2,9 @@
 
 > Taiwan's IMDB
 
+# Components
+> Bootstrap Vue: https://bootstrap-vue.github.io/
+
 ## Build Setup
 
 ``` bash

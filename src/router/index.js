@@ -5,6 +5,7 @@ import Hello from '@/components/Hello'
 //載入頁面
 import HomeView from '@/views/HomeView'
 import MovieView from '@/views/MovieView'
+import RegisterView from '@/views/RegisterView'
 
 Vue.use(Router)
 
@@ -21,9 +22,9 @@ export default new Router({
       component: MovieView
     },
     {
-      path: '/hello',
-      name: 'Hello',
-      component: Hello
+      path: '/register',
+      name: 'RegisterView',
+      component: RegisterView
     }
   ]
 })

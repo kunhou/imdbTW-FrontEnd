@@ -4,15 +4,17 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-// 載入boostrap
-import BootstrapVue from 'bootstrap-vue';
+// Load ElementUI 
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 
-/* 註冊所有組件為全域 */
-Vue.use(BootstrapVue);
+// 註冊為全域組件
+Vue.use(ElementUI)
+
 
 new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
+  render: h => h(App)
 })
