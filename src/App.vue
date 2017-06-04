@@ -1,16 +1,24 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
+    <HeaderBar></HeaderBar>
     <router-view></router-view>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+
+import HeaderBar from './components/HeaderBar';
+import Footer from './components/Footer';
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: { HeaderBar, Footer },
 }
 </script>
 
+<!-- 停止載入bootstrap
 <style lang="scss">
 @import '~bootstrap/dist/css/bootstrap.css';
-@import '~bootstrap-vue/dist/bootstrap-vue.css';
 </style>
+-->

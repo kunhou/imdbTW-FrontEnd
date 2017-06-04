@@ -2,8 +2,8 @@
 
 > Taiwan's IMDB
 
-# Components
-> Bootstrap Vue: https://bootstrap-vue.github.io/
+## Components
+> ElementUI: http://element.eleme.io/#/zh-CN
 
 ## Build Setup
 

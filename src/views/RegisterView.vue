@@ -1,9 +1,10 @@
 <template>
 <div class="container">
-  <HeaderBar></HeaderBar>
-  <div class="register">
-    <Register></Register>
-  </div>
+  <el-row class="register" type="flex">
+    <el-col span="6" class="layout"></el-col>
+    <el-col span="12"><Register></Register></el-col>
+    <el-col span="6" class="layout"></el-col>
+  </el-row>
 </div>
 </template>
 
@@ -24,10 +25,6 @@ export default {
 <style>
 .register{
   margin-top:10px;
-  background:black;
 }
 
-.register el-row{
-  text: center;
-}
 </style>

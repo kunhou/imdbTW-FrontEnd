@@ -1,5 +1,5 @@
 <template>
-<el-row>
+<el-row class="movieList">
   <el-col :span="6" v-for="(o, index) in 6" :key="o" :offset="index > 0 ? 0 : 0">
     <el-card :body-style="{ padding: '0px' }">
       <img src="https://upload.wikimedia.org/wikipedia/zh/thumb/9/99/Dangal_Poster.jpg/220px-Dangal_Poster.jpg" class="image">
@@ -21,19 +21,13 @@
 </template>
 
 <style>
-  .time {
-    font-size: 13px;
-    color: #999;
+  .movieList{
+    margin-top:10px;
   }
-  
+
   .bottom {
     margin-top: 13px;
     line-height: 12px;
-  }
-
-  .button {
-    padding: 0;
-    float: right;
   }
 
   .image {
@@ -54,7 +48,6 @@
     data() {
       return {
         value: 3.2,
-        currentDate: new Date(),
         movieTitle: "我和我的冠軍女兒"
       }
     }
