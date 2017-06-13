@@ -1,6 +1,7 @@
 # imdbTW
 
-> Taiwan's IMDB
+This project is try to build a movie and TV seires database in ZH_TW.
+Now the data is catch from Yahoo Movie(TW), if there is any offense, please tell us, thank you.
 
 ## Components
 > ElementUI: http://element.eleme.io/#/zh-CN
