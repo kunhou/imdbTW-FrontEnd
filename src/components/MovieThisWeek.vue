@@ -6,15 +6,15 @@
       <!--<img :src="axios.defaults.baseURL + movie.imgPath" class="image">-->
       <div style="padding: 14px;">
         <span> {{movie.cname}} </span>
-        <!--<span> {{movie.ename}} </span>-->
-        <div class="bottom clearfix">
+        <span> {{movie.ename}} </span>
+        <!-- <div class="bottom clearfix">
           <el-rate
             v-model="movie.score"
             disabled
             show-text
             text-color="#ff9900"
             text-template="{value}">
-          </el-rate>
+          </el-rate> -->
         </div>
       </div>
     </el-card>
@@ -61,7 +61,7 @@
       }
     },
     created: function () {
-      this.$http.get('other')
+      this.$http.get('this_week')
         .then((response) => {
           this.movies = response.data.result;
         })
