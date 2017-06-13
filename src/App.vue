@@ -2,18 +2,18 @@
   <div id="app" class="container">
     <HeaderBar></HeaderBar>
     <router-view></router-view>
-    <Footer></Footer>
+    <FooterItem></FooterItem>
   </div>
 </template>
 
 <script>
 
 import HeaderBar from './components/HeaderBar';
-import Footer from './components/Footer';
+import FooterItem from './components/FooterItem';
 
 export default {
   name: 'app',
-  components: { HeaderBar, Footer },
+  components: { HeaderBar, FooterItem },
 }
 </script>
 

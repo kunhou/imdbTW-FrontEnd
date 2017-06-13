@@ -3,14 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
 
 // Load ElementUI 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
+import * as CONFIG from './config'
 
 // 註冊為全域組件
 Vue.use(ElementUI)
 
+Vue.prototype.$http = axios;
+axios.defaults.baseURL = CONFIG.API_HOST;
 
 new Vue({
   el: '#app',

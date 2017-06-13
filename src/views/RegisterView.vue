@@ -1,9 +1,9 @@
 <template>
 <div class="container">
   <el-row class="register" type="flex">
-    <el-col span="6" class="layout"></el-col>
-    <el-col span="12"><Register></Register></el-col>
-    <el-col span="6" class="layout"></el-col>
+    <el-col :span="6" class="layout"></el-col>
+    <el-col :span="12"><Register></Register></el-col>
+    <el-col :span="6" class="layout"></el-col>
   </el-row>
 </div>
 </template>
