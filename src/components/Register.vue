@@ -15,6 +15,14 @@
         <el-button>取消</el-button>
       </el-form-item>
     </el-form>
+    <el-form ref="form" :model="form" label-width="80px" label-position="left">
+      <el-form-item v-if="!authorized" label="Facebook登入">
+        <el-button type="primary" @click="login">Login</el-button>
+      </el-form-item>
+      <el-form-item v-else label="Facebook登出">
+        <el-button @click="logout">Logout</el-button>
+      </el-form-item>
+    </el-form>
 </div>
 </template>
 

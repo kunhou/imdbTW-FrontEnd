@@ -4,12 +4,12 @@
     <div slot="header" class="clearfix">
       <span style="line-height: 36px;">本週新片</span>
     </div>
-    <div v-for="o in 4" :key="o" class="text item">
-      {{'列表内容 ' + o }}
-    </div>
-    <!-- <div v-for="movie in movies" :key="o" class="text item">
-      <span> {{movie.cname}} </span>
-    </div> -->
+    <!-- 需要只顯示前五項(Code待補) -->
+    <ol class="this_week_sidebar">
+    <div v-for="movie in movies" :key="o" class="text item">
+      <li>{{movie.cname}}</li>
+    </div> 
+    </ol>
   </el-card>
   <el-card class="box-card">
     <div slot="header" class="clearfix">
@@ -48,15 +48,20 @@
           // });
     },
 
-    computed: {
-      filteredItems: function () {
-        return this.movies.slice(0, 4)
-      }
-    }
+    // 想要讓列表只顯示五項資訊
+    // computed: {
+    //   filteredItems: function () {
+    //     return this.movies.slice(0, 4)
+    //   }
+    // }
   }
 </script>
 
 <style>
+  .this_week_sidebar li{
+    margin-left:-5%;
+  }
+
   .box-card{
     margin-top:10px;
   }

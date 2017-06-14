@@ -8,7 +8,12 @@ import axios from 'axios'
 // Load ElementUI 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
+
+// Load axios config
 import * as CONFIG from './config'
+
+// Load application
+import './assets/fblogin.js'
 
 // 註冊為全域組件
 Vue.use(ElementUI)
