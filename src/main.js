@@ -18,6 +18,7 @@ import './assets/fblogin.js'
 // 註冊為全域組件
 Vue.use(ElementUI)
 
+// 串接API
 Vue.prototype.$http = axios;
 axios.defaults.baseURL = CONFIG.API_HOST;
 

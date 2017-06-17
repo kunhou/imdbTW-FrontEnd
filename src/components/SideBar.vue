@@ -6,7 +6,7 @@
     </div>
     <!-- 需要只顯示前五項(Code待補) -->
     <ol class="this_week_sidebar">
-    <div v-for="movie in movies" :key="o" class="text item">
+    <div v-for="movie in movies" class="text item">
       <li>{{movie.cname}}</li>
     </div> 
     </ol>

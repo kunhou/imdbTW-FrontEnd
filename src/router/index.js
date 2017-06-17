@@ -6,6 +6,7 @@ import HomeView from '@/views/HomeView'
 import MovieListView from '@/views/MovieListView'
 import MovieThisWeekView from '@/views/MovieThisWeekView'
 import RegisterView from '@/views/RegisterView'
+import MovieContentView from '@/views/MovieContentView'
 
 Vue.use(Router)
 
@@ -30,6 +31,11 @@ export default new Router({
       path: '/moviethisweek',
       name: 'MovieThisWeekView',
       component: MovieThisWeekView
+    },
+    {
+      path: '/moviecontent',
+      name: 'MovieContentView',
+      component: MovieContentView
     }
   ]
 })
