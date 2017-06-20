@@ -6,7 +6,7 @@
     </div>
     <!-- 需要只顯示前五項(Code待補) -->
     <ol class="this_week_sidebar">
-    <div v-for="movie in movies" class="text item">
+    <div v-for="movie in moviethisweek" class="text item">
       <li>{{movie.cname}}</li>
     </div> 
     </ol>
@@ -47,13 +47,13 @@
           //   /* 不論成功失敗，都做些事 */
           // });
     },
-
-    // 想要讓列表只顯示五項資訊
-    // computed: {
-    //   filteredItems: function () {
-    //     return this.movies.slice(0, 4)
-    //   }
-    // }
+  
+    // 讓列表只顯示五項資訊
+    computed: {
+      moviethisweek: function () {
+        return this.movies.slice(0, 5)
+      }
+    }
   }
 </script>
 
