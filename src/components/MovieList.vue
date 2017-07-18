@@ -1,7 +1,7 @@
 <template>
 <div>
 <el-row class="listWrapper">
-  <el-col class="movieList" :span="7" v-for="(movie, index) in movielist" :offset="movies.length > 0 ? 1 : 0" :key="movie.id">
+  <el-col class="movieList" :span="7" v-for="(movie, index) in movielist" :offset="movielist.length > 0 ? 1 : 0" :key="movie.id">
     <p>{{ (currPage-1) * countOfPage + index + 1 }}</p>
     <el-card :body-style="{ padding: '0px' }">
       <img :src="imgHost + movie.imgPath" class="image">
