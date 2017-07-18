@@ -8,7 +8,8 @@
     <el-menu-item index="3-1"><router-link to="/moviethisweek">本週新片</router-link></el-menu-item>
     <el-menu-item index="3-2"><router-link to="/movielist">已上映</router-link></el-menu-item>
   </el-submenu>
-  <el-menu-item index="4" style="float: right;"><router-link to="/register">註冊/登入</router-link></el-menu-item>
+  <el-menu-item index="4"><router-link to="/moviecontent">Movie Content</router-link></el-menu-item>
+  <el-menu-item index="5" style="float: right;"><router-link to="/register">註冊/登入</router-link></el-menu-item>
 </el-menu>
 </template>
 
@@ -16,8 +17,6 @@
   export default {
     data() {
       return {
-        activeIndex: '1',
-        activeIndex2: '1'
       };
     },
     methods: {

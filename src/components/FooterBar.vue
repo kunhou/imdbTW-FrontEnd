@@ -1,9 +1,9 @@
 <template>
 <div>
 <el-row>
-  <el-col :span="6"><div class="grid-content bg-purple">MORANK基本介紹</div></el-col>
-  <el-col :span="9"><div class="grid-content bg-purple-light">網站地圖</div></el-col>
-  <el-col :span="9"><div class="grid-content bg-purple">追蹤我們</div></el-col>
+  <el-col :span="8"><div class="grid-content bg-purple">MORANK基本介紹</div></el-col>
+  <el-col :span="8"><div class="grid-content bg-purple-light">網站地圖</div></el-col>
+  <el-col :span="8"><div class="grid-content bg-purple">追蹤我們</div></el-col>
 </el-row>
 <el-row>
   <el-col :span="24"><div class="grid-content" style="float: right;">Copyright © 2017 MORANK. all rights reserved</div></el-col>
