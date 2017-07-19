@@ -36,7 +36,7 @@
     },
     
     created: function () {
-      this.$http.get('this_week')
+      this.$http.get('other')
         .then((response) => {
           this.movies = response.data.result;
         })
